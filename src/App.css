@@ -1,0 +1,164 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 350px;
+  height: 45px;
+  position: relative;
+}
+
+.card-side-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.numbers-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
+  width: 120px;
+  height: fit-content;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.numbers-row-container {
+  display: flex;
+  height: 20px;
+  gap: 7px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+
+.text-container p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.inner-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.flickering-text {
+  display: flex;
+  gap: 3px;
+  align-items: start;
+}
+
+.upper-vertical-line::before,
+.upper-vertical-line::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 5px;
+  height: 0;
+  animation: drawVerticalLine 1s 1s forwards;
+}
+
+.upper-vertical-line::before {
+  top: 0;
+  left: 0;
+}
+
+.upper-vertical-line::after {
+  top: 0;
+  right: 0;
+}
+
+.upper-horizontal-line::before,
+.upper-horizontal-line::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0;
+  height: 5px;
+  animation: drawHorizontalLine 0.5s 0.5s forwards;
+}
+
+.upper-horizontal-line::before {
+  top: 0;
+  left: 0;
+}
+
+.upper-horizontal-line::after {
+  top: 0;
+  right: 0;
+}
+
+.bottom-vertical-line::before,
+.bottom-vertical-line::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 5px;
+  height: 0;
+  animation: drawVerticalLine 1s 1s forwards;
+}
+
+.bottom-vertical-line::before {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-vertical-line::after {
+  bottom: 0;
+  right: 0;
+}
+
+.bottom-horizontal-line::before,
+.bottom-horizontal-line::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0;
+  height: 5px;
+  animation: drawHorizontalLine 0.5s 1.5s forwards;
+}
+
+.bottom-horizontal-line::before {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-horizontal-line::after {
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes drawVerticalLine {
+  to {
+    height: 45px;
+  }
+}
+
+@keyframes drawHorizontalLine {
+  to {
+    width: 45px;
+  }
+}
