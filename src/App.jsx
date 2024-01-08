@@ -97,7 +97,7 @@ function App() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 2.4 }}
+              transition={{ delay: 2.6 }}
               style={{ height: 300, marginTop: "auto", marginBottom: 50 }}>
               <img
                 src={anotherAbstractShape}
