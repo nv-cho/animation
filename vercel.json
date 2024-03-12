@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/test/",
-      "destination": "https://nvcho.xyz/"
+      "destination": "looking-for-grooup.vercel.app"
     }
   ]
 }
