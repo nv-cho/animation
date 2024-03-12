@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/test/",
-      "destination": "looking-for-grooup.vercel.app"
-    }
-  ]
-}
